@@ -11,13 +11,16 @@
   <h1>Birthday Tracker</h1>
 
   <form class="form js-form" action="">
-    <label for="fname">Full Name:</label>
-    <input type="text" id="fname" name="fname" placeholder="Enter your name..." required>
+    <fieldset>
+      <legend>Birthday Tracker:</legend>
+      <label for="fname">Full Name:</label>
+      <input type="text" id="fname" name="fname" placeholder="Enter your name..." required minlength="3" maxlength="120"
+        pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" title="O nome deve conter apenas letras e espaços">
+      <label for="birthday">Your Birthday:</label>
+      <input type="date" id="birthday" name="birthday" min="1900-01-01" max="2025-02-16" required>
 
-    <label for="birthday">Your Birthday:</label>
-    <input type="date" id="birthday" name="birthday" required>
-
-    <button type="submit">Submit</button>
+      <button type="submit">Submit</button>
+    </fieldset>
   </form>
 
   <script src="./js/script.js"></script>
