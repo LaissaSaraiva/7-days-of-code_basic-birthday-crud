@@ -29,3 +29,18 @@ A data de nascimento precisa estar no formato DD/MM/AAAA, por exemplo: 31/01/202
 O mês informado deve estar entre 01 e 12.
 
 https://www.alura.com.br/artigos/formulario-com-form-validation-do-html5?utm_medium=email&_hsenc=p2ANqtz--6BEToiEnXadW0w088ZYRxR-qKveN8ey73bi9n63KLgFDVwdaGjvKGcs19OEeftZuPF2U2grDc5giVgaJC9Thvf0S54Q&_hsmi=283534076&utm_content=283534076&utm_source=hs_automation
+
+## Day 3 :
+No desafio de ontem, você aplicou algumas validações ao seu seu formulário. Elas eram regras de negócio que faziam bastante sentido, como limites de tamanho e formatos da data.
+
+Porém, isso não é suficiente. Ao clicar no botão de “submeter o formulário”, nada está acontecendo e esses dados estão sendo perdidos. E se você conseguisse salvá-los em algum lugar? ;)
+
+Dessa forma, agora que o seu formulário já está pronto e aplicando as validações de negócio, você precisará pegar os dados informados nos campos do mesmo para salvá-los localmente e exibi-los em uma tabela.
+
+Para fazer isso, você terá que adicionar um evento para ouvir a submissão do formulário, e esse evento coletará os valores informados em todos os campos do formulário e montará um objeto representando uma pessoa (com nome e data de nascimento).
+
+Com os dados em mãos, salve-os localmente de forma persistente, para não perdê-los.
+
+Por fim, leia os dados salvos localmente e exiba-os em uma tabela quando a página for recarregada ou fechada e reaberta.
+
+Lembra que no primeiro e-mail eu falei que você implementaria na sua página um CRUD completo? A letra ‘C’ de ‘CRUD’ corresponde a ‘create’ (criar), e a letra ‘R’ a ‘read’ (ler), duas das operações básicas de armazenamento persistente.
